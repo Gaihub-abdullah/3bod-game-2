@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    transition: .6s;
+}
+h1,h2,h3,h4{
+    color: #A122E3 !important;
+}
+ul{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none !important;
+}
+header{
+    height: 100vh;
+    background-image: url(.//imgs/45.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .navbar .login a{
+    color: white;
+    border: 2px #1a1a1adf solid;
+        font-size: 15px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 7px 15px;
+}
+header .navbar ul li{
+position: relative;
+overflow: hidden;
+}
+header .navbar ul li::after{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, #A122E3, #601FBB);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -500px;
+    transition: .4s;
+    z-index: -1;
+}
+header .navbar ul li:hover::after{
+    left: 0;
+    z-index: 1;
+}
+header .navbar ul li:hover>a,header .navbar ul li:hover>a i{
+    color: #601FBB!important ;
+}
+header .navbar .login .singup{
+        background-image: linear-gradient(45deg, #A122E3, #601FBB);
+}
+header .head{
+height: calc(100% - 90px);
+}
+header .head .text{
+    max-width: 45rem;
+    padding: 3rem 5rem 3rem 5rem;
+    background-image: linear-gradient(45deg, #a122e34d, #601fbb69);
+}
+header .head .text h1{
+        font-family: "Cagliostro", sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+}
+header .head .text a{
+    text-align: center;
+    width: 60%;
+    letter-spacing: 3px;
+    color: white;
+    padding: 10px 0px;
+    background-image: linear-gradient(45deg, #A122E3, #601FBB);
+    border-radius: 10px;
+}
+section .aside-1 .list a{
+        border: 1px solid #a122e38a;
+    color: #a122e38a;
+}
+section .aside-1 .list a:hover{
+        background-image: linear-gradient(45deg, #A122E3, #601FBB);
+    color: white;
+}
+section .aside-1 .container .footer-asid .link-aside,.aside-2 .footer-aside .center-linke{
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    padding: 10px 0px;
+    background-image: linear-gradient(45deg, #A122E3, #601FBB);
+    border-radius: 10px;
+}
+.aside-2 .footer-aside .linkes-groub a{
+    color: white;
+    background-image: linear-gradient(45deg, #A122E3, #601FBB);
+    border-radius: 5px;
+}
+section .aside-2,section .aside-1{
+        position: sticky;
+    height: 100vh;
+    top: 0;
+}
+section .aside-2{
+    right: 0;
+}
+section .aside-1{
+    left: 0;
+}
+.aside-2 .body-aside .card {
+    border: none;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content  form button{
+    border: 2px solid #a122e38a ;
+    color: #a122e38a;
+}
+.content .container .row .card .div-img{
+position: relative;
+overflow: hidden;
+}
+.content .container .row .card button{
+    border: 2px solid #a122e38a;
+    color: #a122e38a;
+}
+.content .container .row .card button:hover,.content  form button:hover{
+    background-image:linear-gradient(45deg, #9f22e3d4, #601fbbe9);
+    color: white;
+}
+.content .container .row .card .div-img::before{
+    color: white;
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #a122e38a, #601fbbe9);
+    top: 25rem;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: .5s;
+}.content .container .row .card:hover .div-img::before{
+    top: 0;
+    z-index: 1;
+} 
+.content .container .row .card:hover h5{
+    color: #A122E3 !important;
+}
+.content .container .Card-About-Games .card .div-span span{
+    border: 1px solid #a122e38a;
+    border-radius: 5px;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 5px;
+    transition-property:unset;
+    display: inline-block;
+}
+.content .container .Card-About-Games .card .div-span .span-1::before{
+width: 80%;
+}
+.content .container .Card-About-Games .card .div-span .span-2::before{
+width: 60%;
+}
+.content .container .Card-About-Games .card .div-span .span-3::before{
+width: 75%;
+}
+.content .container .Card-About-Games .card .div-span .span-title{
+    overflow: hidden;
+}
+.content .container .Card-About-Games .card .div-span span::before{
+    content: '';
+    position: absolute;
+    left: -20rem;
+    top: 0;
+    background-image: linear-gradient(45deg, #a122e38a, #601fbbe9);
+    height: 100%;
+    transition: 1s ;
+}
+.content .container .Card-About-Games .card:hover span::before{
+    left: 0;
+}
+.content .container .Card-About-Games .card:hover{
+    margin-top: -10px;
+}
+.aside-2 .body-aside .card-1{
+    background-image: linear-gradient(63deg, #000, rgb(0 0 0 / 50%)) ,url(../imgs/5.jpg);
+}
+.aside-2 .body-aside .card-2{
+    background-image: linear-gradient(63deg, #000, rgb(0 0 0 / 50%)) ,url(../imgs/wallpaperflare.com_wallpaper\ \(1\).jpg);
+}
+.aside-2 .footer-aside .linkes-groub .list li{
+        letter-spacing: 2px;
+}
